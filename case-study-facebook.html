@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook UX Redesign: Case Study | Karan Patel</title>
+  <meta name="description" content="A team UX case study redesigning Facebook for accessibility and usability: research with 200+ users, personas, wireframes, prototypes and usability testing.">
+  <meta name="author" content="Karan Patel">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FAFAF7">
+  <link rel="canonical" href="https://karan-xi.github.io/case-study-facebook.html">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Karan Patel">
+  <meta property="og:title" content="Facebook UX Redesign: Case Study | Karan Patel">
+  <meta property="og:description" content="A team UX case study redesigning Facebook for accessibility and usability: research with 200+ users, personas, wireframes, prototypes and usability testing.">
+  <meta property="og:url" content="https://karan-xi.github.io/case-study-facebook.html">
+  <meta property="og:image" content="https://karan-xi.github.io/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Karan Patel, full-stack developer and UI/UX designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Facebook UX Redesign: Case Study | Karan Patel">
+  <meta name="twitter:description" content="A team UX case study redesigning Facebook for accessibility and usability: research with 200+ users, personas, wireframes, prototypes and usability testing.">
+  <meta name="twitter:image" content="https://karan-xi.github.io/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Karan Patel, home">karan<span aria-hidden="true">.</span>patel</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="case-study.html" aria-current="page">Case study</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary" href="assets\img\Karan-Patel-Resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container page-head">
+      <h1>Redesigning Facebook for Clarity and Accessibility</h1>
+      <p class="lead">A team UX case study that used psychology-informed design to fix Facebook's cluttered interface, buried settings and accessibility gaps.</p>
+      <p><a href="case-study.html">&larr; Back to all case studies</a></p>
+    </div>
+
+    <div class="container cs-layout">
+      <aside class="toc" aria-label="Case study contents">
+        <details data-toc open>
+          <summary>On this page</summary>
+          <nav aria-label="Case study sections">
+            <ol>
+            <li><a href="#overview">Project overview</a></li>
+            <li><a href="#research">User research &amp; discovery</a></li>
+            <li><a href="#problem">Problem statement</a></li>
+            <li><a href="#ideation">Ideation</a></li>
+            <li><a href="#prototyping">Prototyping</a></li>
+            <li><a href="#testing">Usability testing &amp; outcomes</a></li>
+            <li><a href="#solution">Final solution</a></li>
+            <li><a href="#reflection">Reflection &amp; lessons learned</a></li>
+            <li><a href="#design-brief">Design brief</a></li>
+            </ol>
+          </nav>
+        </details>
+      </aside>
+
+      <div class="cs-content">
+        <section id="overview" aria-labelledby="overview-h">
+          <h2 id="overview-h">Project overview</h2>
+          <dl class="meta-grid">
+            <div><dt>Course</dt><dd>PSYC2030, Psychology for Software Design</dd></div>
+            <div><dt>Team</dt><dd>4 people: Sujal Patel, Aryan Patel, Karan Patel, Muhammad Ahmed</dd></div>
+            <div><dt>Methods</dt><dd>Surveys, interviews, personas, usability testing</dd></div>
+            <div><dt>Result</dt><dd>A redesign validated with older adults, younger users and users with disabilities</dd></div>
+          </dl>
+          <p>Facebook has more than 2.9 billion monthly active users, but its interface is often described as cluttered and hard to navigate, especially for people who are new to it, older, or using assistive technology. Our team's brief was to apply psychological design principles, including Norman's usability heuristics, color and emotion, and accessibility standards, to redesign the platform around real user needs rather than assumptions.</p>
+          <p>We picked Facebook because its scale and range of features (news feed, groups, messaging, marketplace, ads) let us study friction across many kinds of user flows, and because its accessibility and clutter complaints are well documented, which gave us a concrete problem to design against.</p>
+        </section>
+
+        <section id="research" aria-labelledby="research-h">
+          <h2 id="research-h">User research &amp; discovery</h2>
+          <p>We ran quantitative research first, to see the shape of the problem across a large user base, then qualitative research, to understand the feelings behind the numbers.</p>
+          <h3>Quantitative: surveys and usage data</h3>
+          <p>We surveyed over 200 Facebook users across age groups on satisfaction, wants and frustrations, and cross-checked that against Facebook's public usage reports and third-party analytics on time spent in the News Feed, Groups and Events.</p>
+          <h3>Qualitative: interviews and observation</h3>
+          <p>We ran 15 semi-structured interviews with older adults, younger users and people with disabilities, and observed people using Facebook directly to see where they hesitated or got stuck.</p>
+
+          <figure class="artifact">
+            <div class="artifact-head">Artifact: Survey results summary</div>
+            <div class="artifact-body">
+              <div class="table-wrap">
+                <table>
+                  <caption class="sr-only">Survey findings on navigation, design and usability</caption>
+                  <thead>
+                    <tr><th scope="col">Theme</th><th scope="col">What users told us</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Navigation</th><td>58% found navigation difficult; adults 55+ were 40% more likely to struggle finding privacy settings or notifications.</td></tr>
+                    <tr><th scope="row">Design</th><td>Most younger users saw the interface as dated next to newer apps; close to half of users with disabilities called accessibility options inadequate.</td></tr>
+                    <tr><th scope="row">Usability</th><td>70% found the News Feed cluttered and overwhelming; 50% wanted more control to customize what they see.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <figcaption>From a survey of 200+ Facebook users across age groups.</figcaption>
+          </figure>
+
+          <p>Interviews added the texture behind those numbers: older adults described feeling intimidated by the interface and struggled to adjust privacy settings or track which posts were from friends. Younger users wanted more feed customization and felt the design lagged behind apps like Instagram. Users with visual impairments ran into missing image alt text and low color contrast, which broke their experience with screen readers.</p>
+        </section>
+
+        <section id="problem" aria-labelledby="problem-h">
+          <h2 id="problem-h">Problem statement</h2>
+          <p>Synthesizing the research gave us three linked problem statements:</p>
+          <ul class="bullets">
+            <li>Older users are overwhelmed by the interface's complexity and cannot reliably locate settings or privacy features.</li>
+            <li>Younger users see the design as dated and slower to use than newer platforms.</li>
+            <li>Users with disabilities face real accessibility barriers, including poor color contrast and no screen-reader support for images.</li>
+          </ul>
+
+          <h3>Design critique</h3>
+          <p>We evaluated the existing design against four lenses, and each surfaced concrete, fixable problems:</p>
+          <ul class="bullets">
+            <li><strong>Norman's principles:</strong> weak visibility of system status (no clear upload progress), icon metaphors that don't match users' mental models, and inconsistent layouts between mobile and desktop.</li>
+            <li><strong>Color and emotion:</strong> near-total reliance on one blue, with little use of color to guide emotion or draw attention to actions.</li>
+            <li><strong>Accessibility:</strong> small low-contrast text, missing alt text on images, and no visible keyboard navigation path.</li>
+            <li><strong>Defensive design:</strong> destructive actions like deleting a post or comment had no confirmation step, and failed actions (like a failed upload) gave vague, unhelpful errors.</li>
+          </ul>
+
+          <figure class="artifact">
+            <div class="artifact-head">Artifact: User personas</div>
+            <div class="artifact-body">
+              <div class="persona">
+                <div>
+                  <div class="persona-avatar" aria-hidden="true">A</div>
+                  <h3>Aryan, 45, retiree</h3>
+                </div>
+                <div>
+                  <p><strong>Goals:</strong> stay in touch with family and friends, plan events, share photos.</p>
+                  <p><strong>Pain points:</strong> small text, a busy interface, and hard-to-find privacy controls.</p>
+                  <p><strong>Needs:</strong> a simpler layout, larger text, and clearer privacy settings.</p>
+                </div>
+              </div>
+            </div>
+            <div class="artifact-body" style="border-top:1px solid var(--line)">
+              <div class="persona">
+                <div>
+                  <div class="persona-avatar" aria-hidden="true">S</div>
+                  <h3>Sujal, 23, college student</h3>
+                </div>
+                <div>
+                  <p><strong>Goals:</strong> keep up with events, join interest groups, message friends, and control the feed.</p>
+                  <p><strong>Pain points:</strong> a dated interface, an irrelevant feed and too many ads.</p>
+                  <p><strong>Needs:</strong> a modern look, more feed control, and lighter ad load.</p>
+                </div>
+              </div>
+            </div>
+            <div class="artifact-body" style="border-top:1px solid var(--line)">
+              <div class="persona">
+                <div>
+                  <div class="persona-avatar" aria-hidden="true">K</div>
+                  <h3>Karan, 32, visually impaired</h3>
+                </div>
+                <div>
+                  <p><strong>Goals:</strong> meet with friends, join groups, stay informed, access content through a screen reader.</p>
+                  <p><strong>Pain points:</strong> poor contrast, missing alt text, and non-standard navigation.</p>
+                  <p><strong>Needs:</strong> high-contrast mode, alt text on all media, and reliable keyboard navigation.</p>
+                </div>
+              </div>
+            </div>
+            <figcaption>Personas built from our survey and interview data, used to keep the redesign anchored to real needs rather than our own assumptions.</figcaption>
+          </figure>
+        </section>
+
+        <section id="ideation" aria-labelledby="ideation-h">
+          <h2 id="ideation-h">Ideation</h2>
+          <p>We ran the redesign through the Design Thinking cycle: empathize, define, ideate, prototype and test. The empathize and define stages fed directly from the research and problem statements above. To ideate, we brainstormed against three "how might we" questions:</p>
+          <ul class="bullets">
+            <li>How might we simplify Facebook's interface for older users, without removing the features they still want?</li>
+            <li>How might we make the feed feel less crowded without reducing it to nothing?</li>
+            <li>How might we make Facebook genuinely usable for people with visual impairments?</li>
+          </ul>
+          <p>That produced four directions we chose to prototype: a simplified, "light" interface option with larger fonts; a smarter, more personal news feed; stronger accessibility support (contrast, screen readers); and a more modern, interactive visual style.</p>
+        </section>
+
+        <section id="prototyping" aria-labelledby="prototyping-h">
+          <h2 id="prototyping-h">Prototyping</h2>
+          <p>We built four low-fidelity wireframes first, then refined them into high-fidelity prototypes so we had something realistic enough to usability test.</p>
+
+          <figure class="artifact">
+            <div class="artifact-head">Artifact: Wireframes</div>
+            <div class="artifact-body">
+              <div class="table-wrap">
+                <img src="assets/img/case-study/fb-wireframe-feed.png" width="402" height="874" alt="Low-fidelity wireframe of the redesigned Facebook home feed, showing a simplified header, a stories row and post cards" loading="lazy">
+              </div>
+            </div>
+            <figcaption>Main feed. A simplified header, a story row, and post cards with a clear interaction bar.</figcaption>
+          </figure>
+
+          <div class="pair">
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/fb-wireframe-settings.png" width="402" height="874" alt="Low-fidelity wireframe of a redesigned settings page, grouped into Privacy Settings and Other Settings" loading="lazy"></div>
+              <figcaption>Settings, regrouped into clear categories.</figcaption>
+            </figure>
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/fb-wireframe-accessibility.png" width="402" height="874" alt="Low-fidelity wireframe of an accessibility settings page with a contrast slider and font size options" loading="lazy"></div>
+              <figcaption>A dedicated accessibility panel.</figcaption>
+            </figure>
+          </div>
+
+          <p>The high-fidelity prototypes carried these layouts into a soft blue palette with rounded elements and subtle shadows, aimed at feeling calmer and more modern than the original.</p>
+
+          <div class="pair">
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/fb-prototype-feed.png" width="402" height="874" alt="High-fidelity prototype of the redesigned Facebook home feed with story avatars and a photo post" loading="lazy"></div>
+              <figcaption>Main feed, high fidelity.</figcaption>
+            </figure>
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/fb-prototype-settings.png" width="402" height="874" alt="High-fidelity prototype of the settings page with grouped privacy and account options" loading="lazy"></div>
+              <figcaption>Settings, high fidelity.</figcaption>
+            </figure>
+          </div>
+          <div class="pair">
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/fb-prototype-accessibility.png" width="402" height="874" alt="High-fidelity prototype of the accessibility panel with a contrast slider, underline links toggle and font size options" loading="lazy"></div>
+              <figcaption>Accessibility panel, high fidelity.</figcaption>
+            </figure>
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/fb-prototype-customization.png" width="402" height="874" alt="High-fidelity prototype of a UI customization page with theme colour swatches and layout density options" loading="lazy"></div>
+              <figcaption>UI customization, high fidelity.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="testing" aria-labelledby="testing-h">
+          <h2 id="testing-h">Usability testing &amp; outcomes</h2>
+          <p>We tested the prototype against the real Facebook interface with people from our three target groups: young adults (18 to 35), older adults (50+) and users who rely on assistive technology such as screen readers and keyboard navigation. Each person worked through four tasks: find privacy settings, adjust the content feed and remove an ad type, post an image with alt text, and turn on high-contrast mode.</p>
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Usability testing feedback by group</caption>
+              <thead>
+                <tr><th scope="col">Group</th><th scope="col">What worked</th><th scope="col">What still needed work</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Young adults</th><td>Liked the personalized feed and the faster, less cluttered interface.</td><td>Wanted finer control over ad frequency and a stronger search tool.</td></tr>
+                <tr><th scope="row">Older adults</th><td>Found the cleaner homepage and Privacy Dashboard easier to use, thanks to plain language and clear icons.</td><td>Small text was still hard to read; adding alt text to photos needed a guided walkthrough.</td></tr>
+                <tr><th scope="row">Assistive-tech users</th><td>Keyboard navigation felt intuitive, and high-contrast mode clearly improved readability.</td><td>Error messages during form entry were unclear, and long comment threads were hard to navigate.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>We used that feedback to make five concrete refinements: a more advanced ad filter, an adjustable font-size setting, a guided alt-text tutorial, clearer and more actionable error messages, and a comment-thread navigation shortcut.</p>
+        </section>
+
+        <section id="solution" aria-labelledby="solution-h">
+          <h2 id="solution-h">Final solution</h2>
+          <p>The final design keeps Facebook's core functions but reorganizes them around five changes: a simplified, personalizable homepage; a single Privacy Dashboard that consolidates settings that used to be scattered across menus; accessibility features including keyboard shortcuts, high-contrast mode, alt text and font scaling; more user control over ad frequency and type; and a shorter interaction flow for posting and commenting.</p>
+        </section>
+
+        <section id="reflection" aria-labelledby="reflection-h">
+          <h2 id="reflection-h">Reflection &amp; lessons learned</h2>
+          <p>Working through the full Design Thinking cycle showed us how much the qualitative interviews changed our thinking versus the survey data alone: the numbers told us where the problems were, but the interviews told us why they mattered to people. Staying anchored to the three personas kept us from designing for an "average user" who doesn't really exist.</p>
+          <p>Looking forward, the team identified a few directions worth exploring further: AI-assisted content personalization, richer video interaction, and features that support collaboration between users, alongside continued usability testing as the design evolves.</p>
+        </section>
+
+        <section id="design-brief" aria-labelledby="design-brief-h">
+          <h2 id="design-brief-h">Design brief</h2>
+          <div class="brief">
+            <div>
+              <h3>Goals and target audience</h3>
+              <p>Make Facebook intuitive, emotionally engaging and accessible across its full range of users: teenagers, young adults, middle-aged users, seniors, and people with disabilities.</p>
+            </div>
+            <div>
+              <h3>Rationale for key UI decisions</h3>
+              <p>We simplified the homepage and gave users control over what appears in it, to cut cognitive load. We consolidated privacy and security into one Privacy Dashboard so users could find and trust their own settings. We moved away from a single dominant blue toward a palette with clearer emotional accents, so key actions (like sharing or reacting) stand out from passive, informational content.</p>
+            </div>
+            <div>
+              <h3>Accessibility considerations</h3>
+              <p>High-contrast mode, mandatory alt text prompts on image uploads, full keyboard navigation with visible shortcuts, and adjustable font sizing, aimed at WCAG-aligned support for users with visual and motor impairments.</p>
+            </div>
+            <div>
+              <h3>Key lesson learned</h3>
+              <p>An empathetic, iterative process, moving through real research, prototyping and testing rather than assumptions, produced a design that felt more emotionally resonant to the people who tested it, not just more usable on paper.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container contact">
+      <h2>Let's work together.</h2>
+      <p>I'm looking for a co-op placement where I can design and build for real users. Email is the fastest way to reach me.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:karanpatel111203@gmail.com">Email me</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/karan-patel-4053bb26a/" rel="noopener">LinkedIn</a>
+        <a class="btn btn-secondary" href="https://github.com/karan-xi" rel="noopener">GitHub</a>
+        <button class="btn btn-secondary" type="button" data-copy="karanpatel111203@gmail.com" hidden>Copy email address</button>
+      </div>
+      <span class="copy-status" role="status" aria-live="polite" data-copy-status></span>
+    </div>
+    <div class="container footer-bar">
+      <p>&copy; <span data-year>2026</span> Karan Patel. Waterloo, Ontario.</p>
+      <p>Built from scratch with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>

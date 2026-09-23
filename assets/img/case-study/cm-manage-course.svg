@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
+  <rect width="900" height="480" fill="#FFFFFF"/>
+  <rect width="900" height="480" fill="none" stroke="#E6E6E1"/>
+  <rect x="0" y="0" width="900" height="44" fill="#FAFAF7"/>
+  <rect x="20" y="14" width="150" height="16" rx="3" fill="#14171C"/>
+  <text x="20" y="76" font-family="Arial, sans-serif" font-size="20" fill="#14171C" font-weight="bold">Manage your course</text>
+  <text x="20" y="104" font-family="Arial, sans-serif" font-size="13" fill="#5A616B">All courses | Edit this course | Add new course</text>
+  <text x="20" y="134" font-family="Arial, sans-serif" font-size="14" fill="#14171C" font-weight="bold">Course summary</text>
+  <text x="20" y="156" font-family="Arial, sans-serif" font-size="13" fill="#5A616B">"INFO-3130 Emerging Interface" is in room 3G15, starting 09/08/2026, instructor M. Reed.</text>
+  <g font-family="Arial, sans-serif" font-size="12">
+    <rect x="20" y="176" width="200" height="52" rx="6" fill="#F4F6F3"/>
+    <text x="34" y="196" fill="#5A616B">Invite Not Sent</text>
+    <text x="34" y="216" fill="#14171C" font-size="18" font-weight="bold">6</text>
+    <rect x="232" y="176" width="200" height="52" rx="6" fill="#E6F4F1"/>
+    <text x="246" y="196" fill="#0B5A54">Sent</text>
+    <text x="246" y="216" fill="#0B5A54" font-size="18" font-weight="bold">9</text>
+    <rect x="444" y="176" width="200" height="52" rx="6" fill="#E6F4F1"/>
+    <text x="458" y="196" fill="#0B5A54">Confirmed</text>
+    <text x="458" y="216" fill="#0B5A54" font-size="18" font-weight="bold">8</text>
+    <rect x="656" y="176" width="200" height="52" rx="6" fill="#FDEBEB"/>
+    <text x="670" y="196" fill="#B33A3A">Declined</text>
+    <text x="670" y="216" fill="#B33A3A" font-size="18" font-weight="bold">1</text>
+  </g>
+  <text x="20" y="256" font-family="Arial, sans-serif" font-size="14" fill="#14171C" font-weight="bold">Students</text>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#5A616B" font-weight="bold">
+    <text x="20" y="280">Name</text>
+    <text x="220" y="280">Email</text>
+    <text x="460" y="280">Enrollment status</text>
+    <text x="660" y="280">Action</text>
+  </g>
+  <line x1="20" y1="290" x2="880" y2="290" stroke="#E6E6E1" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#14171C">
+    <text x="20" y="316">Priya Nair</text>
+    <text x="220" y="316">priya.n@example.com</text>
+    <text x="460" y="316">Confirmation Message Not Sent</text>
+    <rect x="655" y="300" width="150" height="24" rx="4" fill="#0F766E"/>
+    <text x="666" y="317" fill="#FFFFFF" font-size="11">Send Confirmation</text>
+  </g>
+  <line x1="20" y1="330" x2="880" y2="330" stroke="#F2F2EF" stroke-width="1"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#14171C">
+    <text x="20" y="356">Devon Walsh</text>
+    <text x="220" y="356">devon.w@example.com</text>
+    <text x="460" y="356">Confirmation Message Sent</text>
+  </g>
+  <line x1="20" y1="370" x2="880" y2="370" stroke="#F2F2EF" stroke-width="1"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#14171C">
+    <text x="20" y="396">Malik Osei</text>
+    <text x="220" y="396">malik.o@example.com</text>
+    <text x="460" y="396">Enrollment Confirmed</text>
+  </g>
+  <rect x="0" y="418" width="900" height="62" fill="#FAFAF7"/>
+  <text x="20" y="448" font-family="Arial, sans-serif" font-size="12" fill="#5A616B">Add a new student</text>
+  <rect x="20" y="456" width="860" height="1" fill="#E6E6E1"/>
+</svg>

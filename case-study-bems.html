@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI-Driven Building Energy Management System: Case Study | Karan Patel</title>
+  <meta name="description" content="A UX case study on an AI-driven building energy management dashboard: ergonomics research, a visual design system, wireframes and high-fidelity prototypes.">
+  <meta name="author" content="Karan Patel">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FAFAF7">
+  <link rel="canonical" href="https://karan-xi.github.io/case-study-bems.html">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Karan Patel">
+  <meta property="og:title" content="AI-Driven Building Energy Management System: Case Study | Karan Patel">
+  <meta property="og:description" content="A UX case study on an AI-driven building energy management dashboard: ergonomics research, a visual design system, wireframes and high-fidelity prototypes.">
+  <meta property="og:url" content="https://karan-xi.github.io/case-study-bems.html">
+  <meta property="og:image" content="https://karan-xi.github.io/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Karan Patel, full-stack developer and UI/UX designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI-Driven Building Energy Management System: Case Study | Karan Patel">
+  <meta name="twitter:description" content="A UX case study on an AI-driven building energy management dashboard: ergonomics research, a visual design system, wireframes and high-fidelity prototypes.">
+  <meta name="twitter:image" content="https://karan-xi.github.io/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Karan Patel, home">karan<span aria-hidden="true">.</span>patel</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="case-study.html" aria-current="page">Case study</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary" href="assets\img\Karan-Patel-Resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container page-head">
+      <h1>AI-Driven Building Energy Management System</h1>
+      <p class="lead">Designing an ergonomic control-room dashboard so building managers can act on AI energy predictions with confidence, not confusion.</p>
+      <p><a href="case-study.html">&larr; Back to all case studies</a></p>
+    </div>
+
+    <div class="container cs-layout">
+      <aside class="toc" aria-label="Case study contents">
+        <details data-toc open>
+          <summary>On this page</summary>
+          <nav aria-label="Case study sections">
+            <ol>
+            <li><a href="#overview">System overview</a></li>
+            <li><a href="#research">Ergonomics research</a></li>
+            <li><a href="#problem">Problem statement</a></li>
+            <li><a href="#standards">Visual design system</a></li>
+            <li><a href="#prototyping">Wireframes &amp; prototypes</a></li>
+            <li><a href="#testing">Evaluation approach</a></li>
+            <li><a href="#solution">Final solution</a></li>
+            <li><a href="#reflection">Reflection &amp; lessons</a></li>
+            <li><a href="#design-brief">Design brief</a></li>
+            </ol>
+          </nav>
+        </details>
+      </aside>
+
+      <div class="cs-content">
+        <section id="overview" aria-labelledby="overview-h">
+          <h2 id="overview-h">System overview</h2>
+          <dl class="meta-grid">
+            <div><dt>Course</dt><dd>GRDN2000, Graphic Techniques for Software Design</dd></div>
+            <div><dt>Role</dt><dd>Solo project: research, visual design and prototyping</dd></div>
+            <div><dt>Tools</dt><dd>Figma, ergonomics literature review</dd></div>
+            <div><dt>Focus</dt><dd>Engineering-controls design for an AI-driven dashboard</dd></div>
+          </dl>
+          <p>The AI-BEMS is a proposed dashboard for a Building Energy Management System that uses AI to optimize HVAC and lighting in commercial buildings. Sensors and IoT devices track temperature, humidity and occupancy; a data acquisition module combines that with external data like weather forecasts; an AI processing unit forecasts energy demand and recommends optimizations; and a control interface carries those recommendations out, while a user dashboard gives building managers visibility and manual override.</p>
+          <p>The goal was to lower operating costs and reduce a building's carbon footprint by reacting to real-time conditions, while keeping the humans who run the building in control of, and confident in, what the AI is doing.</p>
+          <h3>What happens if it fails</h3>
+          <p>I treated failure modes as a design input rather than an afterthought: a malfunctioning AI-BEMS can drive up energy use, make occupants uncomfortable, cause system downtime, or produce bad decisions from inaccurate sensor data. That risk is why the dashboard needs to make system status and confidence visible at a glance, and why manual override always needs to be one click away.</p>
+        </section>
+
+        <section id="research" aria-labelledby="research-h">
+          <h2 id="research-h">Ergonomics research</h2>
+          <p>Ergonomics (human factors engineering) is the discipline of designing tasks, tools, displays and environments around people's physical and cognitive capabilities, to reduce error and discomfort. I used it as the lens for reviewing what an AI-BEMS asks of the people who operate it, and found six recurring risk areas, each with a design response:</p>
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Ergonomic risks in an AI-driven building energy management system and how the design responds</caption>
+              <thead>
+                <tr><th scope="col">Risk</th><th scope="col">Design response</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Interface complexity</th><td>A non-intuitive interface raises cognitive load and operator error. Response: a clean, simply laid-out dashboard, shaped by early feedback against operators' actual workflows.</td></tr>
+                <tr><th scope="row">Alert fatigue</th><td>Too many low-value alerts train operators to ignore all of them. Response: prioritized, adaptive alerts that surface only what's actionable.</td></tr>
+                <tr><th scope="row">Physical workspace</th><td>Poor control-room ergonomics causes discomfort and strain. Response: this sits outside the screen design itself, but the dashboard assumes adjustable seating and monitor height as a baseline.</td></tr>
+                <tr><th scope="row">Training and adoption</th><td>Operators can resist or mistrust a system they weren't trained on. Response: the interface favors plain language and familiar layouts over technical AI jargon.</td></tr>
+                <tr><th scope="row">Data privacy</th><td>Occupancy and behavior data is sensitive. Response: clear data-use communication and secure handling, treated as a design requirement, not just a policy footnote.</td></tr>
+                <tr><th scope="row">Legal liability</th><td>Inaccurate AI decisions can create safety or cost exposure. Response: the dashboard logs performance and maintenance activity so decisions stay auditable.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="problem" aria-labelledby="problem-h">
+          <h2 id="problem-h">Problem statement</h2>
+          <p>Building managers need a way to trust and act on an AI's energy recommendations in real time, because the research above shows that when an automated system's status, confidence and controls aren't visible enough, operators either over-trust it (and miss failures) or under-trust it (and ignore genuinely useful recommendations). The dashboard has to make the AI's reasoning and the manual override equally visible, at all times.</p>
+        </section>
+
+        <section id="standards" aria-labelledby="standards-h">
+          <h2 id="standards-h">Visual design system</h2>
+          <p>I set technical standards before designing screens, so the visual language would stay consistent across dashboard, alerts and controls.</p>
+          <div class="artifact">
+            <div class="artifact-head">Artifact: Color and type system</div>
+            <div class="artifact-body">
+              <div class="table-wrap">
+                <table>
+                  <caption class="sr-only">Colour palette for the AI-BEMS interface</caption>
+                  <thead><tr><th scope="col">Role</th><th scope="col">Colour</th><th scope="col">Use</th></tr></thead>
+                  <tbody>
+                    <tr><td>Primary</td><td><span class="swatch" style="--sw:#004D40" aria-hidden="true"></span> Dark teal <code>#004D40</code></td><td>Main UI, navigation</td></tr>
+                    <tr><td>Secondary</td><td><span class="swatch" style="--sw:#C4A000" aria-hidden="true"></span> Earthy gold <code>#C4A000</code></td><td>Highlights, status indicators</td></tr>
+                    <tr><td>Accent</td><td><span class="swatch" style="--sw:#D32F2F" aria-hidden="true"></span> Crimson red <code>#D32F2F</code></td><td>Warnings, alerts</td></tr>
+                    <tr><td>Background</td><td><span class="swatch" style="--sw:#FAF3E0" aria-hidden="true"></span> Soft ivory <code>#FAF3E0</code></td><td>Dashboard and panels</td></tr>
+                    <tr><td>Text</td><td><span class="swatch" style="--sw:#4E4E4E" aria-hidden="true"></span> Slate gray <code>#4E4E4E</code></td><td>Readability and contrast</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Typography is Roboto throughout: 20 to 26px for headings, 14 to 18px for body text, 12px for labels. Buttons use dark teal (primary) or earthy gold (secondary) with white text; alerts step from gold (info) to crimson (warning) to deep maroon (error), so severity reads at a glance.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="prototyping" aria-labelledby="prototyping-h">
+          <h2 id="prototyping-h">Wireframes &amp; prototypes</h2>
+          <p>Four screens carry the system end to end: the main dashboard, real-time energy monitoring, environmental controls, and a critical alert.</p>
+
+          <h3>Main dashboard</h3>
+          <p>The central view: a building schematic alongside real-time energy, occupancy, temperature and humidity by floor, with quick access to mode selection, zone control and AI automation toggles.</p>
+          <div class="pair">
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/bems-wireframe-dashboard.png" width="760" height="732" alt="Low-fidelity wireframe of the main AI-BEMS dashboard with a building schematic and summary tiles" loading="lazy"></div>
+              <figcaption>Wireframe</figcaption>
+            </figure>
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/bems-prototype-dashboard.png" width="760" height="732" alt="High-fidelity prototype of the main AI-BEMS dashboard with a colour-coded building schematic and energy summary tiles" loading="lazy"></div>
+              <figcaption>High fidelity</figcaption>
+            </figure>
+          </div>
+
+          <h3>Real-time energy monitoring</h3>
+          <p>Energy use in kWh with a day-over-day comparison, threshold warnings against peak demand, and AI-generated efficiency scores, trends and recommendations by floor.</p>
+          <div class="pair">
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/bems-wireframe-readout.png" width="760" height="781" alt="Low-fidelity wireframe of the real-time energy monitoring screen with a usage graph" loading="lazy"></div>
+              <figcaption>Wireframe</figcaption>
+            </figure>
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/bems-prototype-monitoring.png" width="760" height="786" alt="High-fidelity prototype of the real-time energy monitoring screen with a usage trend line chart and AI predictions" loading="lazy"></div>
+              <figcaption>High fidelity</figcaption>
+            </figure>
+          </div>
+
+          <h3>Environmental monitoring &amp; controls</h3>
+          <p>Lets a manager adjust temperature setpoints and HVAC scheduling by zone, toggle automation on or off, and see AI recommendations for ideal conditions.</p>
+          <div class="pair">
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/bems-wireframe-controls.png" width="760" height="550" alt="Low-fidelity wireframe of environmental input controls for temperature setpoint and HVAC scheduling" loading="lazy"></div>
+              <figcaption>Wireframe</figcaption>
+            </figure>
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/bems-prototype-controls.png" width="760" height="534" alt="High-fidelity prototype of the environmental monitoring screen with temperature, humidity and occupancy readouts by zone" loading="lazy"></div>
+              <figcaption>High fidelity</figcaption>
+            </figure>
+          </div>
+
+          <h3>Critical energy warning</h3>
+          <p>A pop-up that fires when a monitored value crosses a critical threshold, for example energy use above 80% of capacity, with one-tap options to dismiss, auto-optimize, or adjust settings directly, plus an AI recommendation for what caused it.</p>
+          <div class="pair">
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/bems-wireframe-warning.png" width="760" height="577" alt="Low-fidelity wireframe of a critical energy warning pop-up over the control panel" loading="lazy"></div>
+              <figcaption>Wireframe</figcaption>
+            </figure>
+            <figure class="artifact">
+              <div class="artifact-body"><img src="assets/img/case-study/bems-prototype-warning.png" width="760" height="580" alt="High-fidelity prototype of a critical energy warning pop-up with dismiss, auto-optimize and adjust-settings actions" loading="lazy"></div>
+              <figcaption>High fidelity</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="testing" aria-labelledby="testing-h">
+          <h2 id="testing-h">Evaluation approach</h2>
+          <p>This was a course exercise in engineering-controls design, scoped around research and prototyping rather than a build with real building managers to test. So instead of a moderated usability test, I evaluated the design against the ergonomic risks identified above (interface complexity, alert fatigue, training, and so on) and against the technical standards I'd set, rather than against fabricated test results. The natural next step, noted below, is a moderated test with actual facility staff.</p>
+        </section>
+
+        <section id="solution" aria-labelledby="solution-h">
+          <h2 id="solution-h">Final solution</h2>
+          <p>The final dashboard concept keeps four screens working together: an overview for orientation, a monitoring view for trend analysis, a controls view for direct adjustment, and an alert layer that interrupts only when a threshold is actually crossed. The dark teal and soft ivory palette keeps the dashboard calm during normal operation, so the crimson alert state stands out precisely when it should.</p>
+        </section>
+
+        <section id="reflection" aria-labelledby="reflection-h">
+          <h2 id="reflection-h">Reflection &amp; lessons learned</h2>
+          <div>
+              <h3>Take home message:</h3>
+              <p>Care needs to be taken in implementing an AI-based system, from UI complexity and alert fatigue to physical workspace, training, data privacy and legal liabilities. </p>
+          </div>
+          <div>
+              <p> Intuitive user interfaces and intelligent alerting systems reduce operator errors, cognitive load and prevent users from missing vital alerts.  </p>
+          </div>
+          <div>
+              <p> Maintaining good data governance, anonymization and system audits are crucial in addressing data privacy concerns and reducing the legal risks that could stem from AI failures. </p>
+          </div>
+        </section>
+
+        <section id="design-brief" aria-labelledby="design-brief-h">
+          <h2 id="design-brief-h">Design brief</h2>
+          <div class="brief">
+            <div>
+              <h3>Goals and target audience</h3>
+              <p>Give building managers and energy managers a dashboard that lets them lower operating costs and carbon footprint through AI optimization, without losing visibility or control over the building's systems.</p>
+            </div>
+            <div>
+              <h3>Rationale for key UI decisions</h3>
+              <p>Dark teal and soft ivory were chosen to keep the dashboard calm at rest, so that gold highlights and crimson alerts carry real meaning instead of competing with routine data. Roboto and a tight 3-tier type scale (20 to 26px headings, 14 to 18px body, 12px labels) keep dense operational data readable at a glance.</p>
+            </div>
+            <div>
+              <h3>Accessibility and ergonomic considerations</h3>
+              <p>The design responds directly to the six ergonomic risks above: a simplified interface to reduce cognitive load, prioritized alerts to avoid alert fatigue, plain language over AI jargon to ease training and adoption, and an always-visible manual override for legal and safety accountability.</p>
+            </div>
+            <div>
+              <h3>Key lesson learned</h3>
+              <p>Creating AI systems for buildings necessitates creating intuitive interfaces, highly effective alert prioritization, and strong data privacy rules to beat operator fatigue and security dangers.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container contact">
+      <h2>Let's work together.</h2>
+      <p>I'm looking for a co-op placement where I can design and build for real users. Email is the fastest way to reach me.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:karanpatel111203@gmail.com">Email me</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/karan-patel-4053bb26a/" rel="noopener">LinkedIn</a>
+        <a class="btn btn-secondary" href="https://github.com/karan-xi" rel="noopener">GitHub</a>
+        <button class="btn btn-secondary" type="button" data-copy="karanpatel111203@gmail.com" hidden>Copy email address</button>
+      </div>
+      <span class="copy-status" role="status" aria-live="polite" data-copy-status></span>
+    </div>
+    <div class="container footer-bar">
+      <p>&copy; <span data-year>2026</span> Karan Patel. Waterloo, Ontario.</p>
+      <p>Built from scratch with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Manager App: Technical Case Study | Karan Patel</title>
+  <meta name="description" content="A technical case study on the Course Manager App: an ASP.NET Core MVC system with Entity Framework Core, automated email notifications and Azure deployment.">
+  <meta name="author" content="Karan Patel">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FAFAF7">
+  <link rel="canonical" href="https://karan-xi.github.io/case-study-course-manager.html">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Karan Patel">
+  <meta property="og:title" content="Course Manager App: Technical Case Study | Karan Patel">
+  <meta property="og:description" content="A technical case study on the Course Manager App: an ASP.NET Core MVC system with Entity Framework Core, automated email notifications and Azure deployment.">
+  <meta property="og:url" content="https://karan-xi.github.io/case-study-course-manager.html">
+  <meta property="og:image" content="https://karan-xi.github.io/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Karan Patel, full-stack developer and UI/UX designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Course Manager App: Technical Case Study | Karan Patel">
+  <meta name="twitter:description" content="A technical case study on the Course Manager App: an ASP.NET Core MVC system with Entity Framework Core, automated email notifications and Azure deployment.">
+  <meta name="twitter:image" content="https://karan-xi.github.io/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Karan Patel, home">karan<span aria-hidden="true">.</span>patel</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="case-study.html" aria-current="page">Case study</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary" href="assets\img\Karan-Patel-Resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container page-head">
+      <h1>Course Manager App</h1>
+      <p class="lead">A multi-tier ASP.NET Core MVC system for managing course catalogs, student enrollment and automated email notifications.</p>
+      <p><a href="case-study.html">&larr; Back to all case studies</a></p>
+    </div>
+
+    <div class="container cs-layout">
+      <aside class="toc" aria-label="Case study contents">
+        <details data-toc open>
+          <summary>On this page</summary>
+          <nav aria-label="Case study sections">
+            <ol>
+            <li><a href="#summary">Executive summary</a></li>
+            <li><a href="#problem">Problem &amp; objectives</a></li>
+            <li><a href="#architecture">Architecture &amp; tech stack</a></li>
+            <li><a href="#modules">Key functional modules</a></li>
+            <li><a href="#interface">Interface walkthrough</a></li>
+            <li><a href="#deployment">Deployment &amp; version control</a></li>
+            <li><a href="#conclusion">Conclusion &amp; results</a></li>
+            </ol>
+          </nav>
+        </details>
+      </aside>
+
+      <div class="cs-content">
+
+        <section id="summary" aria-labelledby="summary-h">
+          <h2 id="summary-h">Executive summary</h2>
+          <dl class="meta-grid">
+            <div><dt>Stack</dt><dd>ASP.NET Core MVC (.NET 8), C#, Entity Framework Core</dd></div>
+            <div><dt>Frontend</dt><dd>Razor views, Bootstrap, jQuery validation</dd></div>
+            <div><dt>Repository</dt><dd><a href="https://github.com/karan-xi/CourceManagerApp" rel="noopener">github.com/karan-xi/CourceManagerApp</a></dd></div>
+            <div><dt>Deployment target</dt><dd>Azure App Service (or another container-capable host)</dd></div>
+          </dl>
+          <p>The Course Manager App is a multi-tier web application that lets students, instructors and administrative staff manage courses, track enrollment and send automated email notifications. It follows the Model-View-Controller pattern throughout, so data access, business logic and presentation stay in separate, testable layers.</p>
+        </section>
+
+        <section id="problem" aria-labelledby="problem-h">
+          <h2 id="problem-h">Problem &amp; objectives</h2>
+          <p>Educational institutions often run course catalogs, enrollment tracking and status notifications as separate, disconnected systems. That fragmentation makes it easy for a student's enrollment status to fall out of sync with what staff actually see. The app was built around three objectives:</p>
+          <ul class="bullets">
+            <li><strong>Centralized management:</strong> one interface for administrators to create, update and manage both courses and student records.</li>
+            <li><strong>Automated communication:</strong> integrated email notifications for enrollment confirmations and status updates, so no one has to track them manually.</li>
+            <li><strong>A responsive, dependable UI:</strong> a Bootstrap-based interface backed by Entity Framework Core for reliable data operations.</li>
+          </ul>
+        </section>
+
+        <section id="architecture" aria-labelledby="architecture-h">
+          <h2 id="architecture-h">Architecture &amp; tech stack</h2>
+          <p>The app is structured as an MVC application to keep concerns separated cleanly:</p>
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Architecture layers and the technologies behind each</caption>
+              <thead><tr><th scope="col">Layer</th><th scope="col">Technology</th><th scope="col">Responsibility</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Backend</th><td>ASP.NET Core 8 / C#</td><td>Routing, dependency injection and middleware, configured in <code>Program.cs</code>.</td></tr>
+                <tr><th scope="row">Data &amp; ORM</th><td>Entity Framework Core</td><td>Maps <code>Course</code>, <code>Student</code>, <code>StatusEnrollment</code> and <code>EmailSettings</code> to the database via <code>ApplicationDbContext</code>.</td></tr>
+                <tr><th scope="row">Frontend</th><td>Razor views (.cshtml)</td><td>Server-rendered pages styled with Bootstrap, with jQuery for client-side validation.</td></tr>
+                <tr><th scope="row">Services</th><td><code>EmailService.cs</code></td><td>Wraps SMTP configuration and dispatches confirmation and status-update emails.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Data integrity is enforced at the model level as well as in the UI. For example, a course's room number must match a strict pattern, one digit, one capital letter, two digits, such as <code>3G15</code>, using a <code>[RegularExpression]</code> data annotation on the <code>Course</code> model, checked both server-side and via jQuery validation in the browser.</p>
+        </section>
+
+        <section id="modules" aria-labelledby="modules-h">
+          <h2 id="modules-h">Key functional modules</h2>
+          <ul class="bullets">
+            <li><strong>Course management</strong> (<code>CoursesController.cs</code>): full CRUD on the course catalog, through <code>Create</code>, <code>Edit</code>, <code>Index</code> and <code>Manage</code> views.</li>
+            <li><strong>Enrollment &amp; student tracking</strong> (<code>EnrollmentController.cs</code>, student records on <code>Course</code>): tracks each student's status through a <code>StatusEnrollment</code> enum: <em>Confirmation Message Not Sent</em>, <em>Confirmation Message Sent</em>, <em>Enrollment Confirmed</em>, or <em>Enrollment Declined</em>.</li>
+            <li><strong>Automated notifications</strong> (<code>EmailService.cs</code>, <code>EmailSettings.cs</code>): configurable SMTP credentials in <code>appsettings.json</code> drive an HTML confirmation email with one-click confirm and decline links, generated per student and per course.</li>
+          </ul>
+        </section>
+
+        <section id="interface" aria-labelledby="interface-h">
+          <h2 id="interface-h">Interface walkthrough</h2>
+
+          <figure class="artifact">
+            <div class="artifact-head">Course list</div>
+            <div class="artifact-body">
+              <img src="assets/img/case-study/cm-courses-list.svg" width="900" height="420" alt="Diagram of the course list page, with a table of courses by name, instructor, start date, room and student count, and Edit and Manage actions" loading="lazy">
+            </div>
+            <figcaption>Every course shows its student count at a glance, pulled from <code>course.Students.Count()</code>. "Manage" opens the enrollment view for that course.</figcaption>
+          </figure>
+
+          <figure class="artifact">
+            <div class="artifact-head">Managing a course's enrollment</div>
+            <div class="artifact-body">
+              <img src="assets/img/case-study/cm-manage-course.svg" width="900" height="480" alt="Diagram of the course management page, with four enrollment-status counts and a student table with a Send Confirmation action" loading="lazy">
+            </div>
+            <figcaption>The four status counts are computed in the controller and passed to the view via <code>ViewBag</code>, so staff can see enrollment progress without opening every student record.</figcaption>
+          </figure>
+        </section>
+
+        <section id="deployment" aria-labelledby="deployment-h">
+          <h2 id="deployment-h">Deployment &amp; version control</h2>
+          <p>Version control ran through Git, pushed to <a href="https://github.com/karan-xi/CourceManagerApp" rel="noopener">GitHub</a>. Compiled build artifacts (<code>bin/</code>, <code>obj/</code>) and local IDE cache files (<code>.vs/</code>) are excluded via <code>.gitignore</code>, which keeps the repository free of files that cause permission-locking errors and unnecessary bloat.</p>
+          <p>Because ASP.NET Core needs a server-side runtime to execute its controllers and database logic, static hosting such as GitHub Pages can't run it directly, unlike the rest of this portfolio. It's built for deployment on Azure App Service.</p>
+        </section>
+
+        <section id="conclusion" aria-labelledby="conclusion-h">
+          <h2 id="conclusion-h">Conclusion &amp; results</h2>
+          <p>The Course Manager App carries a complete software development lifecycle end to end: from entity-relationship modeling for courses, students and enrollment status, through a version-controlled, cloud-ready MVC application. Entity Framework Core keeps data handling clean and consistent, while the integrated email service closes the loop with automated, real-time communication to students.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container contact">
+      <h2>Let's work together.</h2>
+      <p>I'm looking for a co-op placement where I can design and build for real users. Email is the fastest way to reach me.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:karanpatel111203@gmail.com">Email me</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/karan-patel-4053bb26a/" rel="noopener">LinkedIn</a>
+        <a class="btn btn-secondary" href="https://github.com/karan-xi" rel="noopener">GitHub</a>
+        <button class="btn btn-secondary" type="button" data-copy="karanpatel111203@gmail.com" hidden>Copy email address</button>
+      </div>
+      <span class="copy-status" role="status" aria-live="polite" data-copy-status></span>
+    </div>
+    <div class="container footer-bar">
+      <p>&copy; <span data-year>2026</span> Karan Patel. Waterloo, Ontario.</p>
+      <p>Built from scratch with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>

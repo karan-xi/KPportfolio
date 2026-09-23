@@ -7,7 +7,7 @@
 
 /* 1. TOKENS ---------------------------------------------------------------- */
 :root {
-  /* Colour (matches the Figma styles from Part 2) */
+  /* Colour  */
   --paper: #fafaf7;
   --surface: #ffffff;
   --ink: #14171c;
@@ -352,7 +352,6 @@ a:hover {
     display: inline-flex;
   }
 
-  /* Absolute (not fixed): backdrop-filter on the header would trap a fixed child. */
   .js .site-nav {
     display: none;
     position: absolute;
@@ -552,7 +551,7 @@ a:hover {
   margin-bottom: var(--s-4);
 }
 
-/* The hero's one animated moment: a wireframe that resolves into a UI. */
+/* a wireframe that resolves into a UI. */
 .wire {
   display: grid;
   gap: 0.75rem;

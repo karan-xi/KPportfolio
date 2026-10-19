@@ -7,7 +7,7 @@
 
 /* 1. TOKENS ---------------------------------------------------------------- */
 :root {
-  /* Colour  */
+  /* Colour */
   --paper: #fafaf7;
   --surface: #ffffff;
   --ink: #14171c;
@@ -352,6 +352,7 @@ a:hover {
     display: inline-flex;
   }
 
+  /* Absolute (not fixed): backdrop-filter on the header would trap a fixed child. */
   .js .site-nav {
     display: none;
     position: absolute;
@@ -551,7 +552,7 @@ a:hover {
   margin-bottom: var(--s-4);
 }
 
-/* a wireframe that resolves into a UI. */
+/* The hero's one animated moment: a wireframe that resolves into a UI. */
 .wire {
   display: grid;
   gap: 0.75rem;
@@ -1322,4 +1323,71 @@ th {
 .detail .org {
   margin: 0 0 0.75rem;
   color: var(--muted);
+}
+
+/* Assignment 2: additional responsive and inclusive interaction safeguards. */
+@media (max-width: 599.98px) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+  .actions {
+    flex-wrap: wrap;
+  }
+  .actions .btn {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    overflow-wrap: break-word;
+  }
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 600px) and (max-width: 999.98px) {
+  .container {
+    width: calc(100% - 3rem);
+  }
+  .hero-grid,
+  .feature {
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 3px solid Highlight !important;
+  }
+  .btn {
+    border: 1px solid ButtonText;
+  }
+}
+@media (prefers-contrast: more) {
+  :root {
+    --muted: #303740;
+    --accent: #075e58;
+    --accent-dark: #064c47;
+    --line: #6c747c;
+  }
+  :focus-visible {
+    outline-width: 4px;
+  }
 }

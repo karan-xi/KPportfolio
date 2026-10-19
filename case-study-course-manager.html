@@ -38,18 +38,18 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Karan Patel, home">karan<span aria-hidden="true">.</span>patel</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-bars" aria-hidden="true"></span>
         <span class="nav-toggle-label">Menu</span>
       </button>
-      <nav class="site-nav" id="site-nav" aria-label="Main">
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="case-study.html" aria-current="page">Case study</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a class="btn btn-primary" href="assets\img\Karan-Patel-Resume.pdf" download>Resume</a></li>
+          <li><a class="btn btn-primary" href="assets/img/Karan-Patel-Resume.pdf" download>Resume</a></li>
         </ul>
       </nav>
     </div>
@@ -81,6 +81,7 @@
       </aside>
 
       <div class="cs-content">
+        <p class="todo">This is a technical, architecture-focused case study rather than a UX process case study: it documents how the system is built, not a research-and-testing design process. For an assignment that asks for a UX case study (personas, wireframes, usability testing), use "Redesigning Facebook" or the AI-BEMS case study instead.</p>
 
         <section id="summary" aria-labelledby="summary-h">
           <h2 id="summary-h">Executive summary</h2>
@@ -132,6 +133,7 @@
 
         <section id="interface" aria-labelledby="interface-h">
           <h2 id="interface-h">Interface walkthrough</h2>
+          <p>The screens below are illustrative diagrams built from the app's actual Razor views and controller logic, not live screenshots, since the project doesn't ship any.</p>
 
           <figure class="artifact">
             <div class="artifact-head">Course list</div>
@@ -153,7 +155,7 @@
         <section id="deployment" aria-labelledby="deployment-h">
           <h2 id="deployment-h">Deployment &amp; version control</h2>
           <p>Version control ran through Git, pushed to <a href="https://github.com/karan-xi/CourceManagerApp" rel="noopener">GitHub</a>. Compiled build artifacts (<code>bin/</code>, <code>obj/</code>) and local IDE cache files (<code>.vs/</code>) are excluded via <code>.gitignore</code>, which keeps the repository free of files that cause permission-locking errors and unnecessary bloat.</p>
-          <p>Because ASP.NET Core needs a server-side runtime to execute its controllers and database logic, static hosting such as GitHub Pages can't run it directly, unlike the rest of this portfolio. It's built for deployment on Azure App Service.</p>
+          <p>Because ASP.NET Core needs a server-side runtime to execute its controllers and database logic, static hosting such as GitHub Pages can't run it directly, unlike the rest of this portfolio. It's built for deployment on Azure App Service or another containerized host that can run the .NET runtime.</p>
         </section>
 
         <section id="conclusion" aria-labelledby="conclusion-h">
